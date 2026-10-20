@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1020;
+    color: white;
+    line-height: 1.6;
+}
+header {
+    background-color: #111831;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    color: #8b5cf6;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+/* HERO SECTION */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#home h1 {
+    font-size: 60px;
+    color: #8b5cf6;
+    margin: 10px 0;
+}
+
+#home h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+
+    background-color: #8b5cf6;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#home a:hover {
+    background-color: #7c3aed;
+}
+/* ABOUT SECTION */
+
+#about {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #111831;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #a78bfa;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.highlight-card {
+    background-color: #1a2342;
+    padding: 30px;
+    border-radius: 12px;
+    width: 30%;
+    transition: 0.3s;
+}
+
+.highlight-card h3 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.highlight-card p {
+    color: #cbd5e1;
+}
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+/* SCHEDULE SECTION */
+
+#schedule {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#schedule h2 {
+    font-size: 36px;
+    color: #a78bfa;
+    margin-bottom: 40px;
+}
+
+.schedule-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 30px;
+    background-color: #111831;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.schedule-item .time {
+    color: #8b5cf6;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.schedule-item .activity {
+    color: #cbd5e1;
+}
+
+
+/* SPEAKERS SECTION */
+
+#speakers {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #111831;
+}
+
+#speakers h2 {
+    font-size: 36px;
+    color: #a78bfa;
+    margin-bottom: 40px;
+}
+
+.speaker-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.speaker-card {
+    background-color: #1a2342;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+}
+
+.speaker-avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #8b5cf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.speaker-card h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.speaker-card p {
+    color: #cbd5e1;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #080c18;
+    text-align: center;
+    padding: 30px;
+    color: #cbd5e1;
+}
+
+footer h3 {
+    color: #8b5cf6;
+    margin-bottom: 10px;
+}
+
+
+/* MOBILE FRIENDLY */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-card {
+        width: 90%;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .speaker-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speaker-card {
+        width: 90%;
+    }
+}
+#register {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+#register h2 {
+    font-size: 32px;
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+#register p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+#register button {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#register button:hover {
+    background-color: #7c3aed;
+}
